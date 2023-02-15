@@ -10,7 +10,6 @@ data_new = pd.read_csv(fr'C:/Users/Halberdx/Documents/Python/New_Trade/{NAME}_NE
 
 
 describe_data = data_new.describe()
-#выбоки пандас гугль
 
 list_ind = []
 for i in range(50000):
