@@ -66,4 +66,4 @@ for f in range((len(data)-1)):
     b+=1
 
 data.drop(labels = [0],axis = 0, inplace=True)
-data.to_csv(fr"C:/Users/Halberdx/Documents/Python/New_Trade/{NAME}.csv", index=False)
+data.to_csv(fr"C:/Users/Halberdx/Documents/Python/data analysis/{NAME}.csv", index=False)
