@@ -4,7 +4,7 @@ pd.options.mode.chained_assignment = None
 
 
 NAME = 'KAVAUSDT'
-data_new = pd.read_csv(fr'C:/Users/Halberdx/Documents/Python/New_Trade/{NAME}_NEW.csv')
+data_new = pd.read_csv(fr'C:/Users/Halberdx/Documents/Python/data analysis/{NAME}_NEW.csv')
 
 
 
@@ -280,11 +280,6 @@ print('понижение:',  ser1_0['type'].count(), 'процент:', ser1_0[
 
 
 
-
-
-
-#посмотреть на график и поискать аналогии, посмотреть паттерны которые использует
-
 ser1 = ser1.dropna()
 ser1['interest'] = ser1['interest'].astype(float)
 ser1['type'] = ser1['type'].astype(int)
@@ -301,6 +296,4 @@ ser1_0 = ser1[ser1['type'] == 0]
 print('повышение:',  ser1_1['type'].count(), 'процент:', ser1_1['interest'].sum())
 print('понижение:',  ser1_0['type'].count(), 'процент:', ser1_0['interest'].sum())
 
- #следующая проверка большое падение от 2% одной свечи что дальше и наоборот 
- #разделить этот файл на обработка данных и поиск закономерностей на 2 части
 
