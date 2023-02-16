@@ -3,7 +3,7 @@ import numpy as np
 pd.options.mode.chained_assignment = None
 
 
-data_new = pd.read_csv('C:/Users/Halberdx/Documents/Python/New_Trade/data_new.csv')
+data_new = pd.read_csv('C:/Users/Halberdx/Documents/Python/data analysis/data_new.csv')
 
 
 
