@@ -4,7 +4,7 @@ pd.options.mode.chained_assignment = None
 
 
 NAME = 'KAVAUSDT'
-data = pd.read_csv(fr'C:/Users/Halberdx/Documents/Python/New_Trade/{NAME}.csv')
+data = pd.read_csv(fr'C:/Users/Halberdx/Documents/Python/data analysis/{NAME}.csv')
 
 #Основа корректировки датафрейма(в дальнейшем нужно дополнить)
 data_new = pd.DataFrame(columns=['candle','shade_high','shade_low','interest', 'type'])
@@ -85,4 +85,4 @@ while True:
         break
         
 
-data_new.to_csv(fr"C:/Users/Halberdx/Documents/Python/New_Trade/{NAME}_NEW.csv", index=False)
+data_new.to_csv(fr"C:/Users/Halberdx/Documents/Python/data analysis/{NAME}_NEW.csv", index=False)
